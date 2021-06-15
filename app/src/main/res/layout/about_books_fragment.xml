@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown_50">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="135dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <ImageButton
+        android:id="@+id/aboutExit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@android:drawable/ic_delete"
+        android:backgroundTint="@color/brown_50"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="TODO"
+        />
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_below="@id/aboutTitle"
+        android:layout_marginLeft="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tvAboutBooksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutText"
+        android:text="textAboutBook"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="15dp"
+        android:contentDescription="TODO"
+        android:textColor="@color/black"
+        />
+
+    <ImageButton
+        android:id="@+id/btnAddToBooks"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/tvAboutBooksText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:backgroundTint="@color/brown_50"
+        android:contentDescription="TODO"
+        android:src="@android:drawable/ic_input_add"
+        />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@color/brown_50">
+
+    <ImageButton
+        android:id="@+id/btnRemove"
+        android:text="Remove"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="50dp"
+       android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:backgroundTint="@color/brown_50"
+        />
+
+    <ImageView
+        android:id="@+id/image_view_my_books"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:contentDescription="TODO"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="270dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="150dp"
+        android:layout_height="22dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/tvAuthor"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+</RelativeLayout>

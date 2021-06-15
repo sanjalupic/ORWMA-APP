@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_all_books_list"
+    android:background="@color/brown_50"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_all_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/brown_50"
+        />
+
+    <FrameLayout
+        android:id="@+id/about_books_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+</RelativeLayout>

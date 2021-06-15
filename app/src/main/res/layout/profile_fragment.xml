@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <TextView
+        android:id="@+id/readtv"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Read"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        android:layout_below="@+id/aboutmetv"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_my_books"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/readtv"
+        />
+    <TextView
+        android:id="@+id/aboutme"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Favourite quote"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+            />
+     <TextView
+         android:id="@+id/aboutmetv"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:textColor="@color/black"
+         android:textSize="15dp"
+         android:layout_below="@+id/aboutme"
+            />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/recycler_view_my_books"
+        android:hint="Write your favorite quote."
+        />
+        <Button
+            android:id="@+id/AddDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Add"
+            android:textSize="10dp"
+            android:layout_below="@+id/recycler_view_my_books"
+            android:layout_marginLeft="310dp"
+            />
+
+    </RelativeLayout>
+</ScrollView>
